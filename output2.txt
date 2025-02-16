@@ -1,0 +1,4 @@
+Unique word count : 77
+Average word length : 3,96
+Longest word : GRANDMOTHER, MATHEMATICS
+Exiting...
