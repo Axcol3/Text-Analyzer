@@ -1,28 +1,33 @@
-Project Report: Text Analysis Program
-Objective of the Project:
+# Java Text Processor Project
 
-This project is a text analysis program that processes a text file, allowing users to perform different actions on the text. The actions include counting words, counting unique words, finding the longest and shortest words, deleting specific words or sentences, and more.
+## Documentation
 
-Design Choices:
+### Project Description:
+This project is a text processor written in Java. The program reads a text file, processes the text, and then outputs the results based on the user's choice. The user can choose to count words, find unique words, calculate the average word length, and perform other operations on the text.
 
-Reading the File:
-The program reads the text from an input file. It uses the Scanner class to read the content and processes the text accordingly.
-Menu System:
-The program presents a menu with different options for text analysis. The user can select an option by entering a number. This makes it easy to interact with the program.
-Functions for Text Analysis:
-Each task is handled by a specific function. These functions include counting words, finding unique words, calculating the average word length, and more. The program uses simple operations like loops and string manipulations to achieve these tasks.
-Handling Output:
-The results of the analysis are written to an output file and also displayed on the console. This allows the user to both view the results immediately and save them for later use.
-Challenges Encountered:
+### Design Choices:
+- **Input Handling**: The program reads text files using `Scanner` and processes each line.
+- **Output Handling**: Results are written to a file using `BufferedWriter`.
+- **Modular Functions**: The program is divided into functions to perform different tasks like counting words, finding frequent words, and more. This makes the code easier to maintain and extend.
 
-Reading Files:
-One challenge was handling cases where the input file could not be found or opened. The program uses try-catch blocks to handle errors when reading the file, ensuring the program does not crash.
-Handling User Input:
-Ensuring the user enters valid choices in the menu was another challenge. The program checks for valid input and prompts the user to enter a correct option if necessary.
-Text Processing:
-Processing the text to find words, sentences, and calculate statistics like word count and sentence count required careful use of regular expressions and string manipulation. There were challenges with handling punctuation and ensuring correct splitting of words and sentences.
-Performance Issues:
-When counting the most frequent words or extracting sentences with specific numbers, the program needed to scan the entire text multiple times. This could be slow for large texts, and optimizing the search for words and sentences became an important consideration.
-Conclusion:
+### Challenges:
+- Extracting data from the input files was challenging, especially when handling special characters.
+- Implementing efficient algorithms to count words, sentences, and find frequent words required careful design.
 
-The program successfully analyzes text files and provides useful statistics about the text. It can count words, find unique words, calculate average word lengths, and more. The program is flexible, and it handles common issues like invalid input or file reading errors.
+### Algorithms and Data Structures:
+- **Arrays**: Used to store the split text and individual words.
+- **ArrayList**: Used to store the options read from the text file.
+- **StringBuilder**: Used to build the output text and handle string manipulations efficiently.
+- **Regular Expressions**: Used to search and process specific patterns in the text.
+
+### Improvements:
+- Initially, there were no checks for invalid input. I added error handling to ensure that the user enters valid options.
+- I optimized some functions for better performance when working with larger text files.
+
+### Input and Output Files:
+- **Input Files**: The input files (`input1.txt`, `input2.txt`, etc.) contain text data that the program reads and processes.
+- **Output File**: The results of the processing are saved to an output file (`output.txt`).
+
+### Example Output:
+Here is an example of what the output looks like when the program runs:
+
